@@ -35,6 +35,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <ExtraParams>-i</ExtraParams>
   <WebUI>http://[IP]:[PORT:8090]</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/jcreynolds/docker-containers/master/Icons/NodeLink.png</Icon>
