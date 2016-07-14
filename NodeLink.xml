@@ -13,7 +13,7 @@
     [b]/config[/b] : in this path, NodeLink will store it's configuration files.
   </Description>
   <Registry>https://registry.hub.docker.com/u/jcreynolds/nodelink/</Registry>
-  <GitHub>https://github.com/jcreynolds/docker-containers</GitHub>
+  <GitHub>https://github.com/jcreynolds/docker-templates</GitHub>
   <Repository>jcreynolds/nodelink</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
@@ -37,7 +37,7 @@
   </Data>
   <WebUI>http://[IP]:[PORT:8090]</WebUI>
   <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/jcreynolds/docker-containers/master/Icons/NodeLink.png</Icon>
+  <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/NodeLink.png</Icon>
   <Config Name="Config Directory" Target="/config" Default="/mnt/cache/app_config/NodeLink" Mode="rw" Description="This path is where NodeLink will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
   <ExtraParams>-i</ExtraParams>
 </Container>
