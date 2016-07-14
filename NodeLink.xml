@@ -35,9 +35,9 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <ExtraParams>-i</ExtraParams>
   <WebUI>http://[IP]:[PORT:8090]</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/jcreynolds/docker-containers/master/Icons/NodeLink.png</Icon>
   <Config Name="Config Directory" Target="/config" Default="/mnt/cache/app_config/NodeLink" Mode="rw" Description="This path is where NodeLink will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
+  <ExtraParams>-i</ExtraParams>
 </Container>
