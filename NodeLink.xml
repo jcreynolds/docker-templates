@@ -14,7 +14,7 @@
   </Description>
   <Registry>https://registry.hub.docker.com/u/jcreynolds/nodelink/</Registry>
   <GitHub>https://github.com/jcreynolds/docker-containers</GitHub>
-  <Repository>jcreynolds/NodeLink</Repository>
+  <Repository>jcreynolds/nodelink</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
