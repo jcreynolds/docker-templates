@@ -13,7 +13,7 @@
     [b]/config[/b] : in this path, NodeLink will store it's configuration files.
   </Description>
   <Registry>https://registry.hub.docker.com/u/jcreynolds/nodelink/</Registry>
-  <GitHub>https://github.com/jcreynolds/NodeLink</GitHub>
+  <GitHub>https://github.com/jcreynolds/docker-containers</GitHub>
   <Repository>jcreynolds/NodeLink</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
