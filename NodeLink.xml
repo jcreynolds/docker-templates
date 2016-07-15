@@ -5,7 +5,7 @@
   <Name>NodeLink</Name>
   <Overview>NodeLink is a Node Server which creates nodes (virtual devices) within the ISY.</Overview>
   <Project>http://automationshack.com/wp/nodelink/</Project>
-  <Support>http://automationshack.com/wp/support/</Support>
+  <Support>http://lime-technology.com/forum/index.php?topic=50388.0</Support>
   <Description>
     NodeLink is a Node Server which creates nodes (virtual devices) within the ISY.[br][br]
     NodeLink by default will run its dashboard on port 8090.[br][br]
