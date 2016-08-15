@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Beta>False</Beta>
+  <Category>HomeAutomation:</Category>
+  <Name>HADashboard</Name>
+  <Overview>HADashboard is a dashboard for Home Assistant that is intended to be wall mounted, and is optimized for distance viewing.</Overview>
+  <Project>https://github.com/home-assistant/hadashboard</Project>
+  <Support>http://lime-technology.com/forum/index.php?topic=50388.0</Support>
+  <Description>
+    HADashboard by default will run its dashboard on port 3030.[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/config[/b] : in this path, HADashboard will store it's configuration files.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/jcreynolds/HADashboard/</Registry>
+  <GitHub>https://github.com/jcreynolds/docker-templates</GitHub>
+  <Repository>jcreynolds/HADashboard</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3030</HostPort>
+        <ContainerPort>3030</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:3030]</WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/HADashboard.png</Icon>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/cache/app_config/HADashboard" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
+  <ExtraParams>-i</ExtraParams>
+</Container>
