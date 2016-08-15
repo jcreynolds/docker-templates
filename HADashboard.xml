@@ -11,7 +11,7 @@
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/config[/b] : in this path, HADashboard will store it's configuration files.
   </Description>
-  <Registry>https://registry.hub.docker.com/u/jcreynolds/HADashboard/</Registry>
+  <Registry>https://registry.hub.docker.com/u/jcreynolds/hadashboard/</Registry>
   <GitHub>https://github.com/jcreynolds/docker-templates</GitHub>
   <Repository>jcreynolds/HADashboard</Repository>
   <BindTime>true</BindTime>
