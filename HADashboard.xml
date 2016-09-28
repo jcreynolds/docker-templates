@@ -33,12 +33,12 @@
       <ContainerDir>/app/lib</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-	<Volume>
+    <Volume>
       <HostDir>/mnt/cache/HADashboard/Dashboards</HostDir>
       <ContainerDir>/app/dashboards</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-	<Volume>
+    <Volume>
       <HostDir>/mnt/cache/HADashboard/hapush</HostDir>
       <ContainerDir>/app/hapush</ContainerDir>
       <Mode>rw</Mode>
