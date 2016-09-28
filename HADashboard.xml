@@ -29,17 +29,17 @@
   <Environment/>
   <Data>
     <Volume>
-      <HostDir>path to config</HostDir>
+      <HostDir>/mnt/cache//HADashboard/Library</HostDir>
       <ContainerDir>/app/lib</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>path to config</HostDir>
+      <HostDir>/mnt/cache//HADashboard/Dashboards</HostDir>
       <ContainerDir>/app/dashboards</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>path to config</HostDir>
+      <HostDir>/mnt/cache//HADashboard/HAPush</HostDir>
       <ContainerDir>/app/hapush</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
