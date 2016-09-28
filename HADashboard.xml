@@ -3,7 +3,7 @@
   <Beta>False</Beta>
   <Category>HomeAutomation:</Category>
   <Name>HADashboard</Name>
-  <Overview>HADashboard is a dashboard for Home Assistant that is intended to be wall mounted, and is optimized for distance viewing. Update!</Overview>
+  <Overview>HADashboard is a dashboard for Home Assistant that is intended to be wall mounted, and is optimized for distance viewing.</Overview>
   <Project>https://github.com/home-assistant/hadashboard</Project>
   <Support>http://lime-technology.com/forum/index.php?topic=50388.0</Support>
   <Description>
@@ -47,4 +47,7 @@
   <WebUI>http://[IP]:[PORT:3030]</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/HADashboard.png</Icon>
+  <Config Name="Library" Target="/app/lib" Default="/mnt/cache//HADashboard/Library" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Dashboards" Target="/app/dashboards" Default="/mnt/cache//HADashboard/Dashboards" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="HAPush" Target="/app/hapush" Default="/mnt/cache//HADashboard/HAPush" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
 </Container>
