@@ -50,5 +50,4 @@
   <Config Name="Library" Target="/app/lib" Default="/mnt/cache//HADashboard/Library" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Dashboards" Target="/app/dashboards" Default="/mnt/cache//HADashboard/Dashboards" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="HAPush" Target="/app/hapush" Default="/mnt/cache//HADashboard/HAPush" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
-  <ExtraParams>-i</ExtraParams>
 </Container>
