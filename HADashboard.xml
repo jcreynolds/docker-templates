@@ -3,7 +3,7 @@
   <Beta>False</Beta>
   <Category>HomeAutomation:</Category>
   <Name>HADashboard</Name>
-  <Overview>HADashboard is a dashboard for Home Assistant that is intended to be wall mounted, and is optimized for distance viewing.</Overview>
+  <Overview>HADashboard is a dashboard for Home Assistant that is intended to be wall mounted, and is optimized for distance viewing. Update!</Overview>
   <Project>https://github.com/home-assistant/hadashboard</Project>
   <Support>http://lime-technology.com/forum/index.php?topic=50388.0</Support>
   <Description>
