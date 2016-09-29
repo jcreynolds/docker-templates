@@ -17,14 +17,8 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>3030</HostPort>
-        <ContainerPort>3030</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
+    <Mode>host</Mode>
+    <Publish />
   </Networking>
   <Environment/>
   <Data>
@@ -37,5 +31,5 @@
   <WebUI>http://[IP]:[PORT:3030]</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/HADashboard.png</Icon>
-  <Config Name="Configuration" Target="/config" Default="/mnt/cache/HADashboard/Library" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/cache/HADashboard/Library" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
 </Container>
