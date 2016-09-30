@@ -27,15 +27,11 @@
       <ContainerDir>/app/lib</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    </Data>
-    <Data>
     <Volume>
       <HostDir>/mnt/cache/hadashboard/dashboards</HostDir>
       <ContainerDir>/app/dashboards</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    </Data>
-    <Data>
     <Volume>
       <HostDir>/mnt/cache/hadashboard/hapush</HostDir>
       <ContainerDir>/app/hapush</ContainerDir>
