@@ -27,16 +27,21 @@
       <ContainerDir>/app/lib</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    </Data>
+    <Data>
     <Volume>
       <HostDir>/mnt/cache/hadashboard/dashboards</HostDir>
       <ContainerDir>/app/dashboards</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    </Data>
+    <Data>
     <Volume>
       <HostDir>/mnt/cache/hadashboard/hapush</HostDir>
       <ContainerDir>/app/hapush</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    </Data>
   <WebUI>http://[IP]:[PORT:3030]</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/HADashboard.png</Icon>
