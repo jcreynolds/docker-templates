@@ -20,7 +20,16 @@
     <Mode>host</Mode>
     <Publish />
   </Networking>
-  <Environment/>
+    <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
   <Data>
     <Volume>
       <HostDir>/mnt/cache/hadashboard/lib</HostDir>
