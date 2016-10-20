@@ -24,12 +24,24 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/hadashboard/lib</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <ContainerDir>/usr/src/app/lib</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir>/mnt/cache/hadashboard/dashboards</HostDir>
+      <ContainerDir>/usr/src/app/dashboards</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir>/mnt/cache/hadashboard/hapush</HostDir>
+      <ContainerDir>/usr/src/app/hapush</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     </Data>
   <WebUI>http://[IP]:[PORT:3030]</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/HADashboard.png</Icon>
-  <Config Name="Configuration" Target="/config" Default="/mnt/cache/hadashboard/lib" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="lib" Target="/usr/src/app/lib" Default="/mnt/cache/hadashboard/lib" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="dashboards" Target="/usr/src/app/dashboards" Default="/mnt/cache/hadashboard/dashboards" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="hapush" Target="/usr/src/app/hapush" Default="/mnt/cache/hadashboard/hapush" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
 </Container>
