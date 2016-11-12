@@ -11,7 +11,7 @@
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/config[/b] : in this path, HADashboard will store it's configuration files.
   </Description>
-  <Registry>https://hub.docker.com/r/marijngiesen/hadashboard/</Registry>
+  <Registry>https://hub.docker.com/r/jcreynolds/hadashboard/</Registry>
   <GitHub>https://github.com/jcreynolds/docker-templates</GitHub>
   <Repository>marijngiesen/hadashboard</Repository>
   <BindTime>true</BindTime>
@@ -32,18 +32,18 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/hadashboard/lib</HostDir>
+      <HostDir>/mnt/cache/hadashboard/lib/</HostDir>
       <ContainerDir>/usr/src/app/lib</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
 	<Volume>
-      <HostDir>/mnt/cache/hadashboard/dashboards</HostDir>
-      <ContainerDir>/usr/src/app/dashboards</ContainerDir>
+      <HostDir>/mnt/cache/hadashboard/dashboards/</HostDir>
+      <ContainerDir>/usr/src/app/dashboards/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
 	<Volume>
-      <HostDir>/mnt/cache/hadashboard/hapush</HostDir>
-      <ContainerDir>/usr/src/app/hapush</ContainerDir>
+      <HostDir>/mnt/cache/hadashboard/hapush/</HostDir>
+      <ContainerDir>/hapush/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     </Data>
@@ -52,5 +52,5 @@
   <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/HADashboard.png</Icon>
   <Config Name="lib" Target="/usr/src/app/lib" Default="/mnt/cache/hadashboard/lib" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="dashboards" Target="/usr/src/app/dashboards" Default="/mnt/cache/hadashboard/dashboards" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="hapush" Target="/usr/src/app/hapush" Default="/mnt/cache/hadashboard/hapush" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="hapush" Target="/hapush/" Default="/mnt/cache/hadashboard/hapush" Mode="rw" Description="This path is where HADashboard will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
 </Container>
