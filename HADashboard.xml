@@ -12,7 +12,7 @@
     [b]/config[/b] : in this path, HADashboard will store it's configuration files.
   </Description>
   <Registry>https://hub.docker.com/r/jcreynolds/docker-hadashboard/</Registry>
-  <GitHub>https://github.com/jcreynolds/docker-hadashboard</GitHub>
+  <GitHub>https://github.com/jcreynolds/hadashboard</GitHub>
   <Repository>jcreynolds/docker-hadashboard</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
