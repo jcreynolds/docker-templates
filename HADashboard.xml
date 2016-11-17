@@ -33,12 +33,12 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/hadashboard/lib</HostDir>
-      <ContainerDir>/lib</ContainerDir>
+      <ContainerDir>/usr/src/app/lib</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
 	<Volume>
       <HostDir>/mnt/cache/hadashboard/dashboards</HostDir>
-      <ContainerDir>/dashboards</ContainerDir>
+      <ContainerDir>/usr/src/app/dashboards</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
 	<Volume>
@@ -48,7 +48,7 @@
   </Volume>
   <Volume>
       <HostDir>/mnt/cache/hadashboard/widgets</HostDir>
-      <ContainerDir>/widgets</ContainerDir>
+      <ContainerDir>/usr/src/app/widgets</ContainerDir>
       <Mode>rw</Mode>
   </Volume>
   </Data>
