@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Beta>False</Beta>
+  <Category>Media Applications:</Category>
+  <Name>Phlex</Name>
+  <Overview>A super-sexy voice interface for the Plex HTPC.</Overview>
+  <Project>https://github.com/d8ahazard/Phlex</Project>
+  <Support>http://lime-technology.com/forum/index.php?topic=50388.0</Support>
+  <Description>
+    The purpose of Phlex is to provide a natural language interface for Home Theater applications - effectively bridging the current gap between commercial AI Solutions like Google Home and personal web applications like Plex, Couchpotato, and Sonarr.[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/config[/b] : in this path, Phlex will store it's configuration files.
+  </Description>
+  <Registry>https://hub.docker.com/r/digitalhigh/phlex/</Registry>
+  <GitHub>https://github.com/d8ahazard/Phlex</GitHub>
+  <Repository>digitalhigh/phlex</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish />
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:5666]</WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/HADashboard.png</Icon>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/cache/app_config/Phlex" Mode="rw" Description="This path is where Phlex will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>sk="false"/>
+</Container>
