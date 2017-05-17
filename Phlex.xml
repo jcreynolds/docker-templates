@@ -10,6 +10,7 @@
     The purpose of Phlex is to provide a natural language interface for Home Theater applications - effectively bridging the current gap between commercial AI Solutions like Google Home and personal web applications like Plex, Couchpotato, and Sonarr.[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/config[/b] : in this path, Phlex will store it's configuration files.
+    [b]ports[/b] : Phlex is set to listen on ports 5666 and 5667.
   </Description>
   <Registry>https://hub.docker.com/r/digitalhigh/phlex/</Registry>
   <GitHub>https://github.com/d8ahazard/Phlex</GitHub>
