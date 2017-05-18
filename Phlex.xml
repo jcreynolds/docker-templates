@@ -30,6 +30,6 @@
   </Data>
   <WebUI>http://[IP]:[PORT:5666]</WebUI>
   <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/HADashboard.png</Icon>
+  <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/Phlex.png</Icon>
   <Config Name="Config Directory" Target="/config" Default="/mnt/cache/app_config/Phlex" Mode="rw" Description="This path is where Phlex will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>sk="false"/>
 </Container>
