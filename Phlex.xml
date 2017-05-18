@@ -19,7 +19,18 @@
   <Privileged>false</Privileged>
   <Networking>
     <Mode>host</Mode>
-    <Publish />
+    <Publish>
+      <Port>
+        <HostPort>5666</HostPort>
+        <ContainerPort>5666</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5667</HostPort>
+        <ContainerPort>5667</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Data>
     <Volume>
