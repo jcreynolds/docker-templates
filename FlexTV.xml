@@ -4,7 +4,7 @@
   <Category>Media Applications:</Category>
   <Name>FlexTV</Name>
   <Overview>A super-sexy voice interface for the Plex HTPC.</Overview>
-  <Project>https://github.com/d8ahazard/Phlex</Project>
+  <Project>https://github.com/d8ahazard/FlexTV</Project>
   <Support></Support>
   <Description>
     The purpose of FlexTV is to provide a natural language interface for Home Theater applications - effectively bridging the current gap between commercial AI Solutions like Google Home and personal web applications like Plex, Couchpotato, and Sonarr.[br][br]
@@ -12,9 +12,9 @@
     [b]/config[/b] : in this path, FlexTV will store it's configuration files.
     [b]ports[/b] : FlexTV is set to listen on ports 5666 and 5667.
   </Description>
-  <Registry>https://hub.docker.com/r/digitalhigh/phlex/</Registry>
-  <GitHub>https://github.com/d8ahazard/Phlex</GitHub>
-  <Repository>digitalhigh/phlex</Repository>
+  <Registry>https://registry.hub.docker.com/u/jcreynolds/flextv/</Registry>
+  <GitHub>https://github.com/jcreynolds/docker-templates</GitHub>
+  <Repository>jcreynolds/flextv</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
