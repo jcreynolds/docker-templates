@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Beta>False</Beta>
+  <Category>Media Applications:</Category>
+  <Name>FlexTV</Name>
+  <Overview>A super-sexy voice interface for the Plex HTPC.</Overview>
+  <Project>https://github.com/d8ahazard/Phlex</Project>
+  <Support></Support>
+  <Description>
+    The purpose of FlexTV is to provide a natural language interface for Home Theater applications - effectively bridging the current gap between commercial AI Solutions like Google Home and personal web applications like Plex, Couchpotato, and Sonarr.[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/config[/b] : in this path, FlexTV will store it's configuration files.
+    [b]ports[/b] : FlexTV is set to listen on ports 5666 and 5667.
+  </Description>
+  <Registry>https://hub.docker.com/r/digitalhigh/phlex/</Registry>
+  <GitHub>https://github.com/d8ahazard/Phlex</GitHub>
+  <Repository>digitalhigh/phlex</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5666</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5667</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>path to config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:5666]</WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/Phlex.png</Icon>
+  <Config Name="Config Directory" Target="/config" Default="/mnt/cache/app_config/FlexTV" Mode="rw" Description="This path is where FlexTV will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>sk="false"/>
+</Container>
