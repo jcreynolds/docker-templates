@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Container version="2">
+<Containers>
   <Beta>False</Beta>
   <Category>HomeAutomation:</Category>
   <Name>NodeLink</Name>
@@ -46,6 +46,5 @@
   <WebUI>http://[IP]:[PORT:8090]</WebUI>
   <Banner></Banner>
   <Icon>https://raw.githubusercontent.com/jcreynolds/docker-templates/master/Icons/NodeLink.png</Icon>
-  <Config Name="Config Directory" Target="/config" Default="/mnt/cache/app_config/NodeLink" Mode="rw" Description="This path is where NodeLink will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>
   <ExtraParams>-i</ExtraParams>
-</Container>
+</Containers>
