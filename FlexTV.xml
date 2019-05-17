@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Container version="2">
+<Containers>
   <Beta>False</Beta>
   <Category>Media Applications:</Category>
   <Name>FlexTV</Name>
@@ -56,5 +56,4 @@
   <WebUI>http://[IP]:[PORT:5666]</WebUI>
   <Banner></Banner>
   <Icon>https://github.com/d8ahazard/Phlex/raw/master/img/android-icon-144x144.png</Icon>
-  <Config Name="Config Directory" Target="/config" Default="/mnt/cache/app_config/FlexTV" Mode="rw" Description="This path is where FlexTV will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false"/>sk="false"/>
-</Container>
+</Containers>
