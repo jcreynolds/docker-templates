@@ -53,7 +53,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:5666]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <Banner></Banner>
   <Icon>https://github.com/d8ahazard/Phlex/raw/master/img/android-icon-144x144.png</Icon>
 </Containers>
